@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 15% 6%;
+    --foreground: 45 18% 93%;
+    --card: 220 12% 10%;
+    --card-foreground: 45 18% 93%;
+    --popover: 220 12% 10%;
+    --popover-foreground: 45 18% 93%;
+    --primary: 46 92% 53%;
+    --primary-foreground: 220 15% 6%;
+    --secondary: 220 10% 16%;
+    --secondary-foreground: 45 18% 93%;
+    --muted: 220 10% 14%;
+    --muted-foreground: 220 8% 62%;
+    --accent: 220 10% 18%;
+    --accent-foreground: 45 18% 93%;
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 10% 20%;
+    --input: 220 10% 20%;
+    --ring: 46 92% 53%;
+    --radius: 0.625rem;
+    --live: 0 80% 58%;
+    --ok: 150 60% 45%;
+    --warn: 38 92% 55%;
+    --danger: 0 72% 55%;
+    --violet: 260 70% 70%;
+    --sidebar-background: 220 12% 10%;
+    --sidebar-foreground: 45 18% 93%;
+    --sidebar-primary: 46 92% 53%;
+    --sidebar-primary-foreground: 220 15% 6%;
+    --sidebar-accent: 220 10% 18%;
+    --sidebar-accent-foreground: 45 18% 93%;
+    --sidebar-border: 220 10% 20%;
+    --sidebar-ring: 46 92% 53%;
+  }
+  * { @apply border-border; }
+  html { color-scheme: dark; }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+}

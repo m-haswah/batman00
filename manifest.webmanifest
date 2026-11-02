@@ -1,0 +1,17 @@
+{
+  "name": "محاضرات batman",
+  "short_name": "محاضرات batman",
+  "description": "تسجيل المحاضرات وتلخيصها والإجابة على أسئلة الدكتور فوراً",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0e1013",
+  "theme_color": "#0e1013",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
